@@ -511,7 +511,7 @@ input, select {
         flex-direction: column;
     }
     .product-name {
-        font-size: 1px;
+        font-size: 10px;
         order: 1;
     }
 }
