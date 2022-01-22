@@ -4,6 +4,10 @@ window.onload = function() {
     direction: 'vertical',
        slidesPerView : 1,
        loop : true,
-       autoplay : true,
+       autoplay : {
+            disableOnInteraction: false
+       }
     });
    }
+
+   
