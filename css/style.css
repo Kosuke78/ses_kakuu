@@ -1,0 +1,404 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/**************************
+* ヘッダー
+**************************/
+.header-inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+.header-menu {
+    margin-right: 5%;
+}
+.gnav-list {
+    display: flex;
+    list-style: none;
+    gap: 0px 30px;
+}
+.gnav-item {
+    font-weight: bold;
+}
+.gnav-subitem-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    list-style: none;
+    padding: 20px;
+    color: #ffffff;
+}
+.gnav-item:hover > .gnav-subitem-list {
+    display: block;
+}
+.submenu-title {
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+.submenu-inner {
+    display: flex;
+    gap: 10%;
+}
+.gnav-subitem {
+    line-height: 1.4;
+    padding-bottom: 4px;
+}
+.arrow {
+    color: #125ecc;
+    padding-left: 5px;
+}
+/**************************
+* メイン
+**************************/
+.mv-inner {
+    display: flex;
+}
+.mv-item-l,.mv-item-r {
+    width: 50%;
+    height: 450px;
+}
+.mv-item-r {
+    background-color: #125ecc;
+    color: #ffffff;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.mv-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.catch-copy {
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px #111111;
+}
+.catch-copy-d {
+    font-size: 40px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    text-shadow: 3px 3px 3px #111111;
+}
+.catch-copy-des {
+    padding-left: 30px;
+    line-height: 1.4;
+    font-size: 25px;
+}
+.catch-copy-des span {
+    padding: 0 10px;
+    color: rgb(248, 248, 11);
+}
+.news-inner {
+    height: 80px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.news-title-inner {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.swiper-slide {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/* tec */
+.tec-item-inner {
+    display: flex;
+    align-items: center;
+}
+.tec-img-inner {
+    width: 50%;
+    padding: 5%;
+}
+.tec-img-content-inner {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+.tec-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.tec-des-inner {
+    width: 50%;
+    padding-bottom: 25px;
+}
+.tec-des-title {
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.tec-des {
+    padding-bottom: 30px;
+}
+.tec-btn {
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #125ecc;
+    /* border-radius: ; */
+    text-align: center;
+    border-radius: 18px;
+}
+/* product */
+.product-inner {
+    background-color: #f3f3f3;
+}
+.product-item-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 300px;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 85%;
+    margin: 0 auto;
+}
+.product-img-inner {
+    width: 100%;
+    height: 80%;
+}
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* about */
+.about-inner {
+    padding-bottom: 100px;
+}
+.about-item-inner {
+    display: flex;
+}
+.common-title {
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+}
+.about-item {
+    position: relative;
+    width: 33.333%;
+    height: 300px;
+}
+.about-item:nth-of-type(1) {
+    background: url('../img/about-img1.jpg') no-repeat center center / cover;
+}
+.about-item:nth-of-type(2) {
+    background: url('../img/about-img2.jpg') no-repeat center center / cover;
+}
+.about-item:nth-of-type(3) {
+    background: url('../img/about-img3.jpg') no-repeat center center / cover;
+}
+.about-item-des {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ffffff;
+    text-align: center;
+    line-height: 20px;
+    z-index: 100;
+}
+.about-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+}
+.about-item a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+}
+/* contact */
+.contact-inner {
+    background: url('../img/contact-img.jpg') no-repeat center center / cover;
+    padding: 100px 0;
+    text-align: center;
+}
+.contact-item-inner {
+    width: 30%;
+    margin: 0 auto;
+}
+.contact-des {
+    padding-bottom: 25px;
+    color: #ffffff;
+}
+.contact-btn {
+    padding: 20px;
+    border-radius: 28px;
+    color: #ffffff;
+    background-color: #125ecc;
+}
+/* csr */
+.csr-inner {
+    background-color: #f3f3f3;
+}
+.csr-item-inner {
+    display: flex;
+    align-items: center;
+}
+.csr-video-inner {
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    
+}
+.csr-video-content-inner {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-top: 75%;
+}
+.csr-video-inner iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.csr-des-inner {
+    width: 50%;
+    height: 200px;
+}
+.csr-des-content-inner {
+    width: 70%;
+}
+.csr-des-title {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+/**************************
+* フッター
+**************************/
+.footer-inenr {
+    background-color: #3c3c35;
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+}
+.youtube-icon {
+    padding: 10px 0;
+    font-size: 20px;
+}
