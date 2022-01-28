@@ -610,7 +610,7 @@ input, select {
 }
 @media screen and (max-width:500px) {
     .contact-item-inner {
-        width: 80%;
+        width: 85%;
     }
 }
 /* csr */
@@ -686,4 +686,6 @@ input, select {
 .youtube-icon {
     padding: 10px 0;
     font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
 }
